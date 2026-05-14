@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Em busca da cidade perdida</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <!-- Passo 0 -->
+        <div class="passo ativo" id="passo-0">
+            <p>Um dia desses, dentro de um livro da biblioteca da escola, eu descobri uma carta antiga sobre uma cidade perdida, escondida por riquezas e belezas naturais. Nessa carta, a autora deixa algumas pistas para encontrar essa cidade e eu decidi segui-las!</p>
+            <button class="btn-proximo" data-proximo="1">Rio de Janeiro</button>
+            <button class="btn-proximo" data-proximo="2">Pernambuco</button>
+        </div>
+
+        <!-- Passo 1 - Rio de Janeiro -->
+        <div class="passo" id="passo-1">
+            <p>Você começa sua jornada no Rio de Janeiro, subindo o Pico da Tijuca ao amanhecer para encontrar a primeira pista.</p>
+            <button class="btn-proximo" data-proximo="3">Procurar a pista no topo do pico</button>
+            <button class="btn-proximo" data-proximo="4">Desistir e voltar para casa</button>
+        </div>
+
+        <!-- Passo 2 - Pernambuco -->
+        <div class="passo" id="passo-2">
+            <p>Você decide seguir para Pernambuco, onde ouviu falar de uma cidade antiga escondida entre manguezais.</p>
+            <button class="btn-proximo" data-proximo="5">Explorar a cidade</button>
+            <button class="btn-proximo" data-proximo="4">Desistir e voltar para casa</button>
+        </div>
+
+        <!-- Passo 3 - Pico da Tijuca -->
+        <div class="passo" id="passo-3">
+            <p>No topo do Pico da Tijuca, você encontra uma pista gravada em uma pedra, indicando uma direção misteriosa.</p>
+            <button class="btn-proximo" data-proximo="6">Seguir a direção indicada</button>
+            <button class="btn-proximo" data-proximo="4">Desistir e voltar para casa</button>
+        </div>
+
+        <!-- Passo 4 - Desistir -->
+        <div class="passo" id="passo-4">
+            <p>Você decidiu desistir e voltou para casa. A cidade perdida permanece um mistério.</p>
+        </div>
+
+        <!-- Passo 5 - Pernambuco explorar -->
+        <div class="passo" id="passo-5">
+            <p>Entre os manguezais de Pernambuco, você encontra ruínas antigas cobertas de musgo. A cidade perdida parece estar próxima!</p>
+            <button class="btn-proximo" data-proximo="6">Continuar explorando</button>
+            <button class="btn-proximo" data-proximo="4">Desistir e voltar para casa</button>
+        </div>
+
+        <!-- Passo 6 - Final misterioso -->
+        <div class="passo" id="passo-6">
+            <p>Após muita aventura, você finalmente descobre a cidade perdida, cheia de riquezas e belezas naturais, como indicado na carta!</p>
+        </div>
+    </main>
+
+    <!-- JS -->
+    <script src="script.js"></script>
+</body>
+</html>
