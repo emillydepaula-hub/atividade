@@ -1,0 +1,60 @@
+/* ============================= */
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ============================= */
+/* Body */
+body {
+    background-color: #1D4221;             /* fundo verde escuro */
+    color: white;
+    font-family: "Bai Jamjuree", sans-serif;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* ============================= */
+/* Main container */
+main {
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+}
+
+/* ============================= */
+/* Passos da história */
+.passo {
+    display: none;                         /* escondido por padrão */
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.passo.ativo {
+    display: block;
+}
+
+/* ============================= */
+/* Botões */
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: #64A712;             /* verde */
+    color: white;
+    font-family: "Bai Jamjuree", sans-serif;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #4C8510;             /* verde mais escuro */
+}
